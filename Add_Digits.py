@@ -1,0 +1,14 @@
+n=int(input())
+sum=0
+sum1=0
+count=0
+while(n!=0):
+    if(n>1):
+         r=n%10
+         n=n//10
+         sum=sum+r
+    if(sum>=10):
+        s=sum%10
+        sum=sum//10
+        sum=sum+s
+print(sum)
