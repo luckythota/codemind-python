@@ -1,9 +1,9 @@
 def prime(n):
     for i in range(2,(n//2)+1):
         if(n%i==0):
-            return(False)
+            return False
     else:
-        return(True)
+        return True
 def rev(n):
     rev=0
     while(n):
@@ -13,9 +13,9 @@ def rev(n):
     return rev
 n=int(input())
 if(prime(n)):
-    if prime(rev(n)):
-       print("circular prime")
+    if(prime(rev(n))):
+        print('circular prime')
     else:
-        print("prime but not a circular prime")
+        print('prime but not a circular prime')
 else:
-    print("not prime")
+    print('not prime')
