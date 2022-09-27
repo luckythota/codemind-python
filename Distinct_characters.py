@@ -1,11 +1,10 @@
 s=input()
-v=list(s.lower())
-c=0
+n=list(s.lower())
 b=[]
-for i in v:
-    if i!=' ':
-        if i not in b:
-            b.append(i)
-n=sorted(b)
-print(''.join(n))
+for i in s:
+    if n.count(i)==1 and i!=' ':
+        b.append(i)
+        v=sorted(b)
+print(''.join(v))
+        
     
