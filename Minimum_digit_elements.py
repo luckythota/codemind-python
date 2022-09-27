@@ -1,15 +1,13 @@
 n=int(input())
-a=list(map(int,input().split()))
-l=[]
+l=list(map(int,input().split()))
+a=[]
+k=[]
+for i in l:
+    v=len(str(i))
+    a.append(v)
+k.append(min(a))
 c=0
 for i in a:
-    v=len(str(i))
-    l.append(v)
-s=min(l)
-v=[]
-v.append(s)
-for i in l:
-    if i in v:
+    if i in k:
         c+=1
 print(c)
-        
