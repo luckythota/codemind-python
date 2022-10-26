@@ -7,4 +7,3 @@ for i in range(0,m):
     v=sum(a)
     l.append(v)
 print(max(l))
-        
