@@ -1,0 +1,9 @@
+s=input()
+t=input()
+l=[]
+l.append(s)
+l.append(t)
+k=''.join(l)
+v=sorted(k)
+g=str(''.join(v))
+print(g)
